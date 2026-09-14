@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://oadud-hossain-portfolio.salient-mark-0376.chatgpt.site/sitemap.xml

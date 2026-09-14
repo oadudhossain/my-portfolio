@@ -1,0 +1,31 @@
+LATEST PORTFOLIO: STUDY, SHOWCASE, LIGHT/DARK AND SOUNDS
+
+Extract this archive into a NEW folder, separate from earlier downloads.
+Stop any older portfolio development server before starting this copy.
+
+SOURCE CODE
+Use Node.js 22.13 or newer. Open a terminal in this folder and run:
+  corepack enable
+  pnpm install --frozen-lockfile
+  pnpm dev
+Open the localhost address printed by the server.
+
+BUILT WEBSITE
+The built-website folder contains the freshly built static website.
+Upload its contents to a static web host, or preview using Python:
+  python -m http.server 8080 --directory built-website
+Then open http://localhost:8080. Do not double-click index.html.
+
+FIND THE FEATURES
+1. Study: top navigation, or Menu on mobile. Scroll to Academic background.
+   Enter your actual qualifications in data/education.js.
+2. Websites: top navigation. Includes project search and category filters.
+   Add your real project details and links in data/projects.js.
+3. Light/Dark: theme button in the top navigation.
+4. Sound: a short tone plays on each theme-button click when audio is enabled.
+
+The qualification entries and three project entries are placeholders for
+information you have not supplied. Edit the source data and rebuild with
+pnpm build to update the static output in out/.
+
+See README.md for full customization instructions.
